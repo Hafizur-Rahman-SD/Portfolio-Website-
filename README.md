@@ -8,12 +8,12 @@ This is my personal portfolio website built with HTML, CSS, and JavaScript. It s
 - JavaScript (Vanilla)
 
 ## 📁 Project Structure
-- index.html`: Main homepage
-- about.html`: About me section
-- projects.html`: My works
-- contact.html`: Contact form
-- css/style.css`: All styling
-- js/main.js`: JavaScript functionality
+- index.html: Main homepage
+- about.html: About me section
+- projects.html: My works
+- contact.html: Contact form
+- css/style.css: All styling
+- js/main.js: JavaScript functionality
 
 ## 📫 Contact Me
 - Email: hafizurrahman5004@gmail.com
