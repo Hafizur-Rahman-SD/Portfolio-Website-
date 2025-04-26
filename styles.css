@@ -29,6 +29,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
