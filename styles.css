@@ -395,6 +395,7 @@ a:hover {
 .about-image {
     flex: 1;
     min-width: 300px;
+    
 }
 
 .about-image img {
