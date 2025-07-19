@@ -50,6 +50,19 @@ if(contactForm) {
         this.reset();
     });
 }
-
+//for view details button functionality
+// This function toggles the visibility of the extra details section
+function toggleDetails(button) {
+    const details = button.nextElementSibling.nextElementSibling; // goes to .extra-details
+    if (details.style.display === "none" || details.style.display === "") {
+      details.style.display = "block";
+      details.style.maxHeight = "300px";
+      details.style.transition = "all 0.3s ease-in-out";
+      button.textContent = "Hide Details";
+    } else {
+      details.style.display = "none";
+      button.textContent = "View Details";
+    }
+  }
 // Animation on scroll functionality
 // You can add more interactive features here as you learn more JavaScript
