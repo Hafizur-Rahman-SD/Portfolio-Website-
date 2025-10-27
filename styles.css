@@ -680,3 +680,53 @@ a:hover {
   .pill{ background:#1a2434; border-color:#233048; color:#d8e1f1; }
   .skill-head i{ background:rgba(108,99,255,.2); color:#aab3ff; }
 }
+
+
+/*Just click style */
+/* pill hover/focus effects */
+.pill{
+  position: relative;
+  transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+  cursor: pointer;             /* mouse pointer */
+  user-select: none;
+  outline: none;
+}
+.pill:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,.08);
+  background: #eef0ff;         /* হালকা হাইলাইট */
+  border-color: #d9dcff;
+}
+.pill:active{
+  transform: translateY(0);     /* প্রেস ইফেক্ট */
+  box-shadow: 0 4px 10px rgba(0,0,0,.06);
+}
+
+/* keyboard accessibility */
+.pill[tabindex="0"]:focus{
+  box-shadow: 0 0 0 3px rgba(108,99,255,.25);
+}
+
+/* tooltip (data-tip থেকে টেক্সট নেবে) */
+.pill[data-tip]::after{
+  content: attr(data-tip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%) scale(.95);
+  opacity: 0;
+  pointer-events: none;
+  background: #111827;
+  color: #fff;
+  font-size: .8rem;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: .15s ease;
+}
+.pill:hover[data-tip]::after,
+.pill.show-tip[data-tip]::after{
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
