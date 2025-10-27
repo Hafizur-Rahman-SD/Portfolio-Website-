@@ -587,4 +587,37 @@ a:hover {
   .contact-section .contact-form--right{ justify-content:center !important; }
   .contact-section .cf-grid{ grid-template-columns:1fr !important; }
 }
+/*for project image its center and card view  */
 
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 8px 0;
+  margin: 0 auto;
+  max-width: 85%;   /* আগের মতো 100% না রেখে একটু narrow করো */
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  background: linear-gradient(145deg, #f6f6f8, #ffffff);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.project-image img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-image:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
