@@ -1,122 +1,141 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Hafizur Rahman</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Hafizur Rahman</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
-    <!-- Navigation Bar (same as index.html) -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">Hafizur</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="assets folder/Hafizur_Rahman_CV.pdf" target="_blank">My Resume</a></li>
-            </ul>
-            <div class="menu-btn">
-                <div class="menu-btn__burger"></div>
+  <!-- Navigation Bar (same as index.html) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Hafizur</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="assets folder/Hafizur_Rahman_CV.pdf" target="_blank">My Resume</a></li>
+      </ul>
+      <div class="menu-btn"><div class="menu-btn__burger"></div></div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Feel free to reach out for collaborations or just to say hello!</p>
+
+      <div class="contact-container">
+        <!-- Contact Information (LEFT) -->
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:hafizurrahman5004@gmail.com">hafizurrahman5004@gmail.com</a></p>
             </div>
-        </div>
-    </nav>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Feel free to reach out for collaborations or just to say hello!</p>
-            
-            <div class="contact-container">
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>hafizurrahman5004@gmail.com</p> <!-- Replace with your email -->
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+880 16051-35004</p> <!-- Replace with your phone number -->
-                            <p>+880 17772-36613</p>  <!-- Replace with your phone number -->
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Dhaka, Bangladesh</p> <!-- Replace with your location -->
-                        </div>
-                    </div>
-                    
-                    <!-- Social Media Links -->
-                    <div class="contact-social">
-                        <h3>Connect With Me</h3>
-                        <div class="social-links">
-                            <a href="https://github.com/Hafizur-Rahman-SD" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/hafizur-rahman-5583b2206/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://twitter.com/yourhandle" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="https://facebook.com/https://www.facebook.com/share/19D9TqTkqp/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="https://instagram.com/yourprofile" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/yourchannel" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
-                </div>
-                
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="7" cols="70" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+8801605135004">+880 16051-35004</a></p>
+              <p><a href="tel:+8801777236613">+880 17772-36613</a></p>
             </div>
-        </div>
-    </section>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
 
-
-    <!-- Footer (same as index.html) -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Hafizur Rahman. All Rights Reserved.</p>
+          <!-- Social Media Links -->
+          <div class="contact-social">
+            <h3>Connect With Me</h3>
             <div class="social-links">
-                <div class="container">
-                    
-                    <div class="social-links">
-                        <a href="https://github.com/Hafizur-Rahman-SD" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/hafizur-rahman-5583b2206/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/yourhandle" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://facebook.com/https://www.facebook.com/share/19D9TqTkqp/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://instagram.com/yourprofile" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://youtube.com/yourchannel" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
+              <a href="https://github.com/Hafizur-Rahman-SD" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/hafizur-rahman-5583b2206/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/yourhandle" aria-label="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+              <!-- fixed facebook URL -->
+              <a href="https://facebook.com/share/19D9TqTkqp/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://instagram.com/yourprofile" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://youtube.com/yourchannel" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- Contact Form (RIGHT, card style like your screenshot) -->
+        <div class="contact-form contact-form--right">
+          <form class="cf-card" id="contactForm" action="#" method="POST" novalidate>
+            <h3 class="cf-title">Send me a message</h3>
+
+            <div class="cf-grid">
+              <label class="cf-field">
+                <span>Name<span aria-hidden="true">*</span></span>
+                <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
+              </label>
+
+              <label class="cf-field">
+                <span>Email<span aria-hidden="true">*</span></span>
+                <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
+              </label>
+
+              <label class="cf-field">
+                <span>Phone<span aria-hidden="true">*</span></span>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required autocomplete="tel">
+              </label>
+
+              <label class="cf-field">
+                <span>Company/Organization</span>
+                <input type="text" name="company" placeholder="Your Company/Organization" autocomplete="organization">
+              </label>
+
+              <label class="cf-field cf-full">
+                <span>Message<span aria-hidden="true">*</span></span>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="cf-btn">Send Message</button>
+            <p class="cf-note">Prefer email? <a href="mailto:hafizurrahman5004@gmail.com">hafizurrahman5004@gmail.com</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hafizur Rahman. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/Hafizur-Rahman-SD" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/hafizur-rahman-5583b2206/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourhandle" aria-label="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://facebook.com/share/19D9TqTkqp/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/yourprofile" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/yourchannel" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
