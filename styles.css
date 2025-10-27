@@ -167,7 +167,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1.25rem 0;
     background-color: var(--white-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -730,3 +730,9 @@ a:hover {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
+
+
+/*About me Who I am CSS  add */
+.about-highlights{margin:14px 0 24px;display:grid;gap:8px}
+.about-highlights li{color:#444}
+.about-highlights strong{color:#2a2a2a}
