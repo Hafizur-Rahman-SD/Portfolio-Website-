@@ -598,7 +598,7 @@ a:hover {
   border-radius: 12px;
   padding: 8px 0;
   margin: 0 auto;
-  max-width: 85%;   /* আগের মতো 100% না রেখে একটু narrow করো */
+  max-width: 62%;   /* project image zoom version */
 }
 
 .project-image img {
@@ -635,7 +635,6 @@ a:hover {
   line-height: 1.7;
   color: #444;
 }
-
 
 
 
@@ -769,3 +768,94 @@ a:hover {
   text-align: right;
   font-size: 0.95rem;
 }
+
+
+
+.project-details {
+  background: #1e293b;
+  color: #f1f5f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-details:hover {
+  transform: translateY(-5px);
+}
+
+.project-tech {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.project-tech span {
+  display: inline-block;
+  background: #334155;
+  color: #38bdf8;
+  padding: 5px 12px;
+  border-radius: 6px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links .btn {
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+
+.project-card h1 {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 28px;
+  font-weight: 700;
+    margin-top: 50px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.project-card h3 {
+  text-align: center;
+  color: #333333;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.project-card h4 {
+  text-align: center;
+  color: #333333;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*wehen we add out project then maintain css from here  its just for project number possition h1= projct 1....project 4 means h4*/
