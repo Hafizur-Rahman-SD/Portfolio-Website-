@@ -5,9 +5,9 @@
     --primary-color: #6c63ff; /* Main brand color - purple */
     --secondary-color: #4d44db; /* Darker purple */
     --dark-color: #2a2a2a; /* For text and dark backgrounds */
-    --light-color: #f8f9fa; /* Light background */
+    --light-color: #f1f5f9; /* Light background */
     --gray-color: #6c757d; /* Gray text */
-    --white-color: #ffffff; /* Pure white */
+    --white-color: #f5f3ff; /* Pure white */
     --success-color: #28a745; /* Green for success messages */
     --error-color: #dc3545; /* Red for errors */
     
