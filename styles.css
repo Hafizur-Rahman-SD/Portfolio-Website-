@@ -587,6 +587,7 @@ a:hover {
   .contact-section .contact-form--right{ justify-content:center !important; }
   .contact-section .cf-grid{ grid-template-columns:1fr !important; }
 }
+
 /*for project image its center and card view  */
 
 .project-image {
@@ -597,7 +598,7 @@ a:hover {
   border-radius: 12px;
   padding: 8px 0;
   margin: 0 auto;
-  max-width: 85%;   /* আগের মতো 100% না রেখে একটু narrow করো */
+  max-width: 85%;   /* ai jaygya imahge size niya kaj korte hobe */
 }
 
 .project-image img {
@@ -638,7 +639,7 @@ a:hover {
 
 
 
-
+/* Skill section CSS change */
 /*  Skills (light variant, matches your theme)  */
 .skills-grid{
   display:grid;
@@ -694,11 +695,11 @@ a:hover {
 .pill:hover{
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0,0,0,.08);
-  background: #eef0ff;         /* হালকা হাইলাইট */
+  background: #eef0ff;         /* halka higligth hobe  */
   border-color: #d9dcff;
 }
 .pill:active{
-  transform: translateY(0);     /* প্রেস ইফেক্ট */
+  transform: translateY(0);     /* press effect */
   box-shadow: 0 4px 10px rgba(0,0,0,.06);
 }
 
@@ -707,7 +708,7 @@ a:hover {
   box-shadow: 0 0 0 3px rgba(108,99,255,.25);
 }
 
-/* tooltip (data-tip থেকে টেক্সট নেবে) */
+/* tooltip (data-tip theke text nibe) */
 .pill[data-tip]::after{
   content: attr(data-tip);
   position: absolute;
@@ -732,7 +733,39 @@ a:hover {
 }
 
 
-/*About me Who I am CSS  add */
+/*About me Who I am CSS  add its work in bolid point in about section */
 .about-highlights{margin:14px 0 24px;display:grid;gap:8px}
 .about-highlights li{color:#444}
 .about-highlights strong{color:#2a2a2a}
+
+
+.testimonial-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  text-align: left; /* ektu real review feeling asbe   */
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* testimonial likha ta aro smooth r sondor korar jonno  */
+.testimonial-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: right;
+  font-size: 0.95rem;
+}
