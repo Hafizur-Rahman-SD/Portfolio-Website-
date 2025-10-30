@@ -127,6 +127,7 @@ a:hover {
 
 .btn-primary:hover {
     background-color: var(--secondary-color);
+     color: var(--white-color);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(108, 99, 255, 0.2);
 }
