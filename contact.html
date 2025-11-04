@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Hafizur Rahman</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
 
 
 </head>
+
 <body>
   <!-- Navigation Bar (same as index.html) -->
   <nav class="navbar">
@@ -23,7 +26,9 @@
         <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="assets folder/HafizurRahman_CV.pdf" target="_blank">My Resume</a></li>
       </ul>
-      <div class="menu-btn"><div class="menu-btn__burger"></div></div>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
     </div>
   </nav>
 
@@ -63,53 +68,74 @@
           <div class="contact-social">
             <h3>Connect With Me</h3>
             <div class="social-links">
-              <a href="https://github.com/Hafizur-Rahman-SD" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://linkedin.com/in/hafizur-rahman-5583b2206/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://twitter.com/yourhandle" aria-label="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+              <a href="https://github.com/Hafizur-Rahman-SD" aria-label="GitHub" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/hafizur-rahman-5583b2206/" aria-label="LinkedIn" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/yourhandle" aria-label="Twitter" target="_blank"><i
+                  class="fab fa-x-twitter"></i></a>
               <!-- fixed facebook URL -->
-              <a href="https://facebook.com/share/19D9TqTkqp/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://instagram.com/yourprofile" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://youtube.com/yourchannel" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://facebook.com/share/19D9TqTkqp/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i
+                  class="fab fa-facebook"></i></a>
+              <a href="https://instagram.com/yourprofile" aria-label="Instagram" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://youtube.com/yourchannel" aria-label="YouTube" target="_blank"><i
+                  class="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>
 
-        <!-- Contact Form (RIGHT, card style like my choise) -->
-        <div class="contact-form contact-form--right">
-          <form class="cf-card" id="contactForm" action="#" method="POST" novalidate>
-            <h3 class="cf-title">Send me a message</h3>
+       <!-- Contact Form (RIGHT, card style like your choice) -->
+<div class="contact-form contact-form--right">
+  <form class="cf-card" id="contactForm"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        novalidate>
 
-            <div class="cf-grid">
-              <label class="cf-field">
-                <span>Name<span aria-hidden="true">*</span></span>
-                <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
-              </label>
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="9a17ad2f-fdb9-4765-8c49-17345e0ed003">
 
-              <label class="cf-field">
-                <span>Email<span aria-hidden="true">*</span></span>
-                <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
-              </label>
+    <!-- Optional: Custom email subject -->
+    <input type="hidden" name="subject" value="New message from portfolio website">
 
-              <label class="cf-field">
-                <span>Phone<span aria-hidden="true">*</span></span>
-                <input type="tel" name="phone" placeholder="Your Phone Number" required autocomplete="tel">
-              </label>
+    <h3 class="cf-title">Send me a message</h3>
 
-              <label class="cf-field">
-                <span>Company/Organization</span>
-                <input type="text" name="company" placeholder="Your Company/Organization" autocomplete="organization">
-              </label>
+    <div class="cf-grid">
+      <label class="cf-field">
+        <span>Name<span aria-hidden="true">*</span></span>
+        <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
+      </label>
 
-              <label class="cf-field cf-full">
-                <span>Message<span aria-hidden="true">*</span></span>
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-              </label>
-            </div>
+      <label class="cf-field">
+        <span>Email<span aria-hidden="true">*</span></span>
+        <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
+      </label>
 
-            <button type="submit" class="cf-btn">Send Message</button>
-            <p class="cf-note">Prefer email? <a href="mailto:hafizurrahman5004@gmail.com">hafizurrahman5004@gmail.com</a></p>
-          </form>
-        </div>
+      <label class="cf-field">
+        <span>Phone<span aria-hidden="true">*</span></span>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required autocomplete="tel">
+      </label>
+
+      <label class="cf-field">
+        <span>Company/Organization</span>
+        <input type="text" name="company" placeholder="Your Company/Organization" autocomplete="organization">
+      </label>
+
+      <label class="cf-field cf-full">
+        <span>Message<span aria-hidden="true">*</span></span>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      </label>
+    </div>
+
+    <button type="submit" class="cf-btn">Send Message</button>
+
+    <p class="cf-note">
+      Prefer email? 
+      <a href="mailto:hafizurrahman5004@gmail.com">hafizurrahman5004@gmail.com</a>
+    </p>
+  </form>
+</div>
+
       </div>
     </div>
   </section>
@@ -118,10 +144,11 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Hafizur Rahman. All Rights Reserved.</p>
-     
+
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -38,18 +38,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handling
-const contactForm = document.getElementById('contactForm');
-if(contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Here we would typically send the form data to a server
-        // For now, we'll just show an alert
-        alert('Thank you for your message! I will get back to you soon.');
-        this.reset();
-    });
-}
+
+
 //for view details button functionality
 // This function toggles the visibility of the extra details section
 function toggleDetails(button) {
