@@ -1,50 +1,421 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hafizur Rahman - portfolio </title>
+    <title>Hafizur Rahman - portfolio</title>
     <!-- Linking the main CSS file -->
     <link rel="stylesheet" href="styles.css">
     <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Using Google Fonts - Poppins (a clean, modern font) -->
+    <!-- Using Google Fonts - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Hafizur</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="certificates.html">Certificate</a></li>
-                <li><a href="assets folder/Hafizur Rahman CV (3).pdf" target="_blank">My Resume</a></li>
+                <li><a href="certificates.html" class="active">Certificate</a></li>
+                <li><a href="assets/Hafizur Rahman CV (3).pdf" target="_blank">My Resume</a></li>
             </ul>
 
-            <!-- Mobile menu button (hidden on desktop) -->
+            <!-- Mobile menu button -->
             <div class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
         </div>
     </nav>
 
+    <!-- Certificates Section -->
+    <section class="certificates-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications & Achievements</h2>
+                <p class="section-subtitle">My acquired certificates and training certificates.
 
-<section id="certificates" class="cert-gallery">
-  <h2>My Certificates</h2>
-  <div class="gallery-grid">
-    <a href="certificates/cert1.html">
-      <img src="images/cert1-thumb.jpg" alt="HTML Certificate">
-    </a>
-    <a href="certificates/cert2.html">
-      <img src="images/cert2-thumb.jpg" alt="CSS Certificate">
-    </a>
-    <a href="certificates/cert3.html">
-      <img src="images/cert3-thumb.jpg" alt="JavaScript Certificate">
-    </a>
-  </div>
-</section>
+</p>
+            </div>
+
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-card" data-certificate="1">
+                    <div class="certificate-img">
+                        <img src="assets folder/certificates/fcc-data-analysis.jpeg" alt="Data Analysis with Python" loading="lazy">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Data Analysis with Python</h3>
+                        <p class="issuer">freeCodeCamp</p>
+                        <span class="certificate-date"> 05 August 2025</span>
+                        <div class="certificate-badge">
+                            <i class="fas fa-chart-line"></i> Data Science
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card" data-certificate="2">
+                    <div class="certificate-img">
+                        <img src="assets folder/certificates/fcc-machine-learning.png" alt="Machine Learning with Python" loading="lazy">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Machine Learning with Python</h3>
+                        <p class="issuer">freeCodeCamp</p>
+                        <span class="certificate-date">07 October 2025</span>
+                        <div class="certificate-badge">
+                            <i class="fas fa-robot"></i> AI/ML
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card" data-certificate="3">
+                    <div class="certificate-img">
+                        <img src="assets folder/certificates/responsive web design .png" alt="Web Development Certificate" loading="lazy">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Responsive Web Design</h3>
+                        <p class="issuer">freeCodeCamp</p>
+                        <span class="certificate-date">01 December 2025</span>
+                        <div class="certificate-badge">
+                            <i class="fas fa-code"></i> Web Dev
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card" data-certificate="4">
+                    <div class="certificate-img">
+                        <img src="assets/certificates/placeholder.jpg" alt="JavaScript Algorithms" loading="lazy">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>JavaScript Algorithms</h3>
+                        <p class="issuer">freeCodeCamp</p>
+                        <span class="certificate-date">Mar 2024</span>
+                        <div class="certificate-badge">
+                            <i class="fab fa-js-square"></i> JavaScript
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate-card" data-certificate="5">
+                    <div class="certificate-img">
+                        <img src="assets/certificates/placeholder.jpg" alt="Front End Libraries" loading="lazy">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Front End Libraries</h3>
+                        <p class="issuer">freeCodeCamp</p>
+                        <span class="certificate-date">Apr 2024</span>
+                        <div class="certificate-badge">
+                            <i class="fab fa-react"></i> React
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 6 -->
+                <div class="certificate-card" data-certificate="6">
+                    <div class="certificate-img">
+                        <img src="assets/certificates/placeholder.jpg" alt="Back End Development" loading="lazy">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Back End Development</h3>
+                        <p class="issuer">freeCodeCamp</p>
+                        <span class="certificate-date">May 2024</span>
+                        <div class="certificate-badge">
+                            <i class="fas fa-server"></i> Backend
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificate-note">
+                <p><i class="fas fa-info-circle"></i> "Click on the certificate to view detailed information."
+
+</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal (Hidden by default) -->
+    <div id="certificate-modal" class="cert-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-certificate-img">
+                    <img src="" alt="" id="modal-certificate-image">
+                </div>
+                <div class="modal-certificate-details">
+                    <h2 id="modal-certificate-title"></h2>
+                    <div class="modal-meta">
+                        <p><strong><i class="fas fa-university"></i> Issued by:</strong> <span id="modal-issuer"></span></p>
+                        <p><strong><i class="far fa-calendar-alt"></i> Issued on:</strong> <span id="modal-date"></span></p>
+                        <p><strong><i class="far fa-clock"></i> Duration:</strong> <span id="modal-duration"></span></p>
+                        <p><strong><i class="fas fa-star"></i> Credential ID:</strong> <span id="modal-credential-id"></span></p>
+                    </div>
+                    
+                    <div class="modal-skills">
+                        <h3><i class="fas fa-tools"></i> Skills Learned</h3>
+                        <div class="skills-list" id="modal-skills"></div>
+                    </div>
+                    
+                    <div class="modal-projects">
+                        <h3><i class="fas fa-project-diagram"></i> Projects Completed</h3>
+                        <ul id="modal-projects"></ul>
+                    </div>
+                    
+                    <div class="modal-description">
+                        <h3><i class="fas fa-file-alt"></i> Description</h3>
+                        <p id="modal-description"></p>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="" target="_blank" id="modal-link" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                        <button class="btn btn-secondary close-modal-btn">
+                            <i class="fas fa-times"></i> Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hafizur Rahman. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Hafizur-Rahman-SD" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hafizur-rahman-5583b2206/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:hafizurrahman5004@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://facebook.com/https://www.facebook.com/share/19D9TqTkqp/?mibextid=wwXIfr"
+                    aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/md_hafizur_rahman_rony/profilecard/" aria-label="Instagram"
+                    target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/yourchannel" aria-label="YouTube" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Certificates -->
+    <script>
+        // Certificate Data Array
+        const certificates = [
+            {
+                id: 1,
+                title: "Data Analysis with Python",
+                issuer: "freeCodeCamp",
+                date: "05 August 2025",
+                duration: "300+ hours",
+                credentialId: "FCC-DA-PY-2025",
+                skills: ["Python", "Pandas", "NumPy", "Data Visualization", "Data Cleaning", "Matplotlib", "Seaborn"],
+                projects: [
+                    "Demographic Data Analyzer",
+                    "Medical Data Visualizer",
+                    "Page View Time Series Visualizer",
+                    "Sea Level Predictor",
+                    "Mean-Variance-Standard Deviation Calculator"
+                ],
+                description: "This certification covers the entire data analysis process with Python. Learned to clean, analyze, and visualize data using libraries like Pandas, NumPy, Matplotlib, and Seaborn. Completed 5 real-world data analysis projects that demonstrate practical skills in data manipulation and visualization.",
+                image: "assets folder/certificates/fcc-data-analysis.jpeg",
+                link: "https://www.freecodecamp.org/certification/Hafizur0713/data-analysis-with-python-v7"
+            },
+            {
+                id: 2,
+                title: "Machine Learning with Python",
+                issuer: "freeCodeCamp",
+                date: "07 October 2025",
+                duration: "300+ hours",
+                credentialId: "FCC-ML-PY-2025",
+                skills: ["Machine Learning", "Scikit-learn", "TensorFlow", "Neural Networks", "Supervised Learning", "Unsupervised Learning"],
+                projects: [
+                    "Rock Paper Scissors Image Classifier",
+                    "Cat and Dog Image Classifier",
+                    "Book Recommendation Engine using KNN",
+                    "Linear Regression Health Costs Calculator",
+                    "Neural Network SMS Text Classifier"
+                ],
+                description: "Comprehensive machine learning certification covering both supervised and unsupervised learning techniques. Built and trained neural networks using TensorFlow, implemented various ML algorithms with Scikit-learn, and completed 5 hands-on projects that solve real-world classification and prediction problems.",
+                image: "assets folder/certificates/fcc-machine-learning.png",
+                link: "https://www.freecodecamp.org/certification/hafizur0713/machine-learning-with-python-v7"
+            },
+            {
+                id: 3,
+                title: "Responsive Web Design",
+                issuer: "freeCodeCamp",
+                date: "01 December 2025",
+                duration: "300+ hours",
+                credentialId: "FCC-RWD-2025",
+                skills: ["HTML5", "CSS3", "Accessibility", "Responsive Design", "Flexbox", "CSS Grid", "Visual Design"],
+                projects: [
+                    "Tribute Page",
+                    "Survey Form",
+                    "Product Landing Page",
+                    "Technical Documentation Page",
+                    "Personal Portfolio Website"
+                ],
+                description: "Learned responsive web design principles and how to create websites that work perfectly on all devices. Mastered CSS Flexbox, Grid, and modern layout techniques. Built 5 projects that demonstrate proficiency in creating accessible, mobile-first web designs.",
+                image: "assets folder/certificates/responsive web design .png",
+                link: "https://www.freecodecamp.org/certification/fcc-f2667b7f-ceb7-4bab-8e89-ca4f03a70052/responsive-web-design-v9"
+            },
+            {
+                id: 4,
+                title: "JavaScript Algorithms and Data Structures",
+                issuer: "freeCodeCamp",
+                date: "March 2024",
+                duration: "300+ hours",
+                credentialId: "FCC-JS-DSA-2024",
+                skills: ["JavaScript", "Algorithms", "Data Structures", "ES6+", "Functional Programming", "OOP"],
+                projects: [
+                    "Palindrome Checker",
+                    "Roman Numeral Converter",
+                    "Telephone Number Validator",
+                    "Cash Register",
+                    "All 5 algorithm challenges"
+                ],
+                description: "Mastered JavaScript fundamentals and advanced concepts including ES6+, functional programming, and object-oriented programming. Solved 100+ algorithm challenges covering various data structures like arrays, strings, objects, and more.",
+                image: "assets/certificates/placeholder.jpg",
+                link: "#"
+            },
+            {
+                id: 5,
+                title: "Front End Development Libraries",
+                issuer: "freeCodeCamp",
+                date: "April 2024",
+                duration: "300+ hours",
+                credentialId: "FCC-FED-2024",
+                skills: ["React", "Redux", "Bootstrap", "jQuery", "SASS", "React Hooks"],
+                projects: [
+                    "Random Quote Machine",
+                    "Markdown Previewer",
+                    "Drum Machine",
+                    "JavaScript Calculator",
+                    "25+5 Clock (Pomodoro Timer)"
+                ],
+                description: "Learned popular front-end libraries and frameworks including React, Redux, Bootstrap, jQuery, and SASS. Built interactive web applications using React components, state management with Redux, and styled components.",
+                image: "assets/certificates/placeholder.jpg",
+                link: "#"
+            },
+            {
+                id: 6,
+                title: "Back End Development and APIs",
+                issuer: "freeCodeCamp",
+                date: "May 2024",
+                duration: "300+ hours",
+                credentialId: "FCC-BE-API-2024",
+                skills: ["Node.js", "Express.js", "MongoDB", "REST APIs", "Authentication", "Security"],
+                projects: [
+                    "Timestamp Microservice",
+                    "Request Header Parser",
+                    "URL Shortener",
+                    "Exercise Tracker",
+                    "File Metadata Microservice"
+                ],
+                description: "Learned back-end development with Node.js and Express.js. Built RESTful APIs, worked with databases (MongoDB), implemented user authentication, and followed security best practices. Deployed back-end applications to cloud platforms.",
+                image: "assets/certificates/placeholder.jpg",
+                link: "#"
+            }
+        ];
+
+        // DOM Elements
+        const certificateCards = document.querySelectorAll('.certificate-card');
+        const modal = document.getElementById('certificate-modal');
+        const closeModalBtn = document.querySelector('.close-modal');
+        const closeModalBtn2 = document.querySelector('.close-modal-btn');
+
+        // Open Modal Function
+        function openModal(certificateId) {
+            const cert = certificates.find(c => c.id == certificateId);
+            if (cert) {
+                // Set modal content
+                document.getElementById('modal-certificate-image').src = cert.image;
+                document.getElementById('modal-certificate-title').textContent = cert.title;
+                document.getElementById('modal-issuer').textContent = cert.issuer;
+                document.getElementById('modal-date').textContent = cert.date;
+                document.getElementById('modal-duration').textContent = cert.duration;
+                document.getElementById('modal-credential-id').textContent = cert.credentialId;
+                document.getElementById('modal-description').textContent = cert.description;
+                document.getElementById('modal-link').href = cert.link;
+                
+                // Set skills as badges
+                const skillsContainer = document.getElementById('modal-skills');
+                skillsContainer.innerHTML = '';
+                cert.skills.forEach(skill => {
+                    const skillBadge = document.createElement('span');
+                    skillBadge.className = 'pill';
+                    skillBadge.textContent = skill;
+                    skillsContainer.appendChild(skillBadge);
+                });
+                
+                // Set projects as list items
+                const projectsContainer = document.getElementById('modal-projects');
+                projectsContainer.innerHTML = '';
+                cert.projects.forEach(project => {
+                    const li = document.createElement('li');
+                    li.textContent = project;
+                    projectsContainer.appendChild(li);
+                });
+                
+                // Show modal
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        }
+
+        // Close Modal Function
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+
+        // Add click event to each certificate card
+        certificateCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const certId = card.getAttribute('data-certificate');
+                openModal(certId);
+            });
+        });
+
+        // Close modal when close buttons are clicked
+        closeModalBtn.addEventListener('click', closeModal);
+        closeModalBtn2.addEventListener('click', closeModal);
+
+        // Close modal when clicking outside the modal
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.style.display === 'flex') {
+                closeModal();
+            }
+        });
+
+        // Mobile menu toggle (if needed)
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('open');
+                navLinks.classList.toggle('mobile-menu');
+            });
+        }
+    </script>
+
+    <!-- Link to main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
